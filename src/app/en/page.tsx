@@ -25,11 +25,11 @@ export default function Home() {
           I work mostly with building light and fast web applications.
         </p>
         <p className="mb-4">
-          I believe development is an art that can build a better world.
+          I believe that my applications should always be special.
         </p>
         <p className="mb-4">
-          I have a passion for creating games that can entertain people all over
-          the world. One of them is{" "}
+          My commitment to what I develop extends even to my hobbies. And
+          because of my fascination with games, one of the games I created was{" "}
           <Anchor href="https://www.typergame.app/" target="_blank">
             TyperGame
           </Anchor>
