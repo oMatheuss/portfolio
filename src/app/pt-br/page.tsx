@@ -31,11 +31,6 @@ export default function Home() {
         <p className='mb-2'>Já desenvolvi diversas aplicações, dentre elas:</p>
         <ul className='mb-4 list-disc list-inside space-y-2'>
           <li>
-            <Anchor href='https://www.typergame.app/' target='_blank'>
-              TyperGame
-            </Anchor>
-          </li>
-          <li>
             <Anchor href='https://polyrhythm-chi.vercel.app/' target='_blank'>
               Polyrhythm
             </Anchor>

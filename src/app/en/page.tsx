@@ -32,12 +32,6 @@ export default function Home() {
         </p>
         <ul className='mb-4 list-disc list-inside space-y-2'>
           <li>
-            <Anchor href='https://www.typergame.app/' target='_blank'>
-              TyperGame
-            </Anchor>
-            <span className='text-sm ml-2'>(only portuguese)</span>
-          </li>
-          <li>
             <Anchor href='https://polyrhythm-chi.vercel.app/' target='_blank'>
               Polyrhythm
             </Anchor>
