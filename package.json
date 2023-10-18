@@ -11,16 +11,17 @@
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.4.2",
     "@types/node": "20.2.3",
-    "@types/react": "18.2.7",
-    "@types/react-dom": "18.2.4",
+    "@types/react": "^18.2.29",
+    "@types/react-dom": "^18.2.14",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.3",
     "negotiator": "^0.6.3",
     "next": "^13.5.5",
+    "octokit": "^3.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sharp": "^0.32.6",
-    "typescript": "5.0.4"
+    "typescript": "^5.2.2"
   },
   "devDependencies": {
     "@types/negotiator": "^0.6.2",
