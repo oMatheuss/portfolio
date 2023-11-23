@@ -43,7 +43,7 @@ export default async function Home({ params }: { params: { lang: Langs } }) {
             {dict.experiences.map((x, i) => (
               <li
                 key={i}
-                className='border-4 border-red-600 rounded p-4 h-full shadow'
+                className='border-4 border-red-600 rounded-lg p-4 h-full shadow'
               >
                 <h4 className='font-bold'>
                   {x.company} - {x.role}
@@ -63,7 +63,7 @@ export default async function Home({ params }: { params: { lang: Langs } }) {
             {dict.education.map((x, i) => (
               <li
                 key={i}
-                className='border-4 border-red-600 rounded p-4 h-full shadow'
+                className='border-4 border-red-600 rounded-lg p-4 h-full shadow'
               >
                 <h4 className='font-bold'>{x.location}</h4>
                 <p className='text-sm'>
@@ -81,7 +81,7 @@ export default async function Home({ params }: { params: { lang: Langs } }) {
             {res.data.map((repo) => (
               <li
                 key={repo.id}
-                className='border-4 border-red-600 rounded p-4 h-full shadow'
+                className='border-4 border-red-600 rounded-lg p-4 h-full shadow'
               >
                 <a href={repo.html_url} target='_blank'>
                   <h3 className='hover:text-red-600 uppercase text-sm text-gray-800 dark:text-gray-300 font-extrabold'>
