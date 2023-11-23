@@ -1,9 +1,8 @@
 import { Metadata } from 'next';
 import '@/app/globals.css';
-import { Comfortaa } from 'next/font/google';
+import { Red_Hat_Display } from 'next/font/google';
 
-const notoSans = Comfortaa({
-  weight: ['400', '500', '700'],
+const notoSans = Red_Hat_Display({
   subsets: ['latin'],
 });
 
