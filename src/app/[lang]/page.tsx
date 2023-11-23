@@ -41,17 +41,16 @@ export default async function Home({ params }: { params: { lang: Langs } }) {
           {res.data.map((repo) => (
             <li
               key={repo.id}
-              className='hover:-translate-y-1 transition-transform border border-red-600 p-4 h-full rounded shadow shadow-red-600'
+              className='transition-transform border-4 border-red-600 rounded p-4 h-full shadow'
             >
               <a
                 href={repo.html_url}
                 target='_blank'
-                className='hover:text-red-600 hover:underline'
               >
-                <h3 className='font-extrabold mb-2'>{repo.name}</h3>
+                <h3 className='hover:text-red-600 uppercase text-sm text-gray-800 dark:text-gray-300 font-extrabold'>{repo.name}</h3>
               </a>
               <Languages url={repo.languages_url} />
-              <p className='text-sm truncate'>{repo.description}</p>
+              <p className='text-sm truncate mt-2'>{repo.description}</p>
             </li>
           ))}
         </ul>

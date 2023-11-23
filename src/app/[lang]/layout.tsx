@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 import '@/app/globals.css';
-import { Inter } from 'next/font/google';
+import { Noto_Sans } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const notoSans = Noto_Sans({ weight: ['100', '300', '400', '500', '700', '900'], subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Matheus • FullStack Developer',
@@ -47,7 +47,7 @@ export default function RootLayout({
   params: { lang: string };
 }) {
   return (
-    <html lang={params.lang} className={inter.className}>
+    <html lang={params.lang} className={notoSans.className}>
       <body>{children}</body>
     </html>
   );
