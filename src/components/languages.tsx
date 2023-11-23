@@ -6,7 +6,7 @@ export default async function Languages({ url }: { url: string }) {
   return (
     <p className='flex text-xs truncate'>
       {langs.map((lang) => (
-        <span key={lang} className='bg-red-600 p-1 mr-2 rounded font-bold text-red-200'>
+        <span key={lang} className='bg-red-600 px-1 py-0.5 mr-2 rounded font-bold text-red-200'>
           {lang}
         </span>
       ))}

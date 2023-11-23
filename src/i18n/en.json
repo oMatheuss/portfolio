@@ -1,8 +1,25 @@
 {
-  "hi": "Hi, I'am Matheus Moura",
+  "hi": "Hi, I'm Matheus Moura",
   "role": "FullStack Developer",
   "slogan": "I'm 21 years old, I'm a student on the Computer Engineering course at Uniube and I currently work as a developer using React and .NET.",
   "whoami": "I'm brazilian, and I live in Uberlândia - MG, Brazil.",
   "contactPhrase": "You can contact me at:",
-  "developed": "I have already developed a few applications, among them:"
+  "developed": "Projects",
+  "experiencesTitle": "Experience",
+  "experiences": [
+    {
+      "company": "Techmind",
+      "role": "Development Analyst",
+      "responsibilities": "Software developer and systems support in .Net, Asp.Net, React.",
+      "start": "Sep. de 2023",
+      "end": "Until now"
+    },
+    {
+      "company": "Techmind",
+      "role": "Junior Development Analyst",
+      "responsibilities": "Systems support in .Net, Asp.Net, React.",
+      "start": "Nov. de 2022",
+      "end": "Sep. de 2023"
+    }
+  ]
 }

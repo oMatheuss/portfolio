@@ -36,27 +36,49 @@ export default async function Home({ params }: { params: { lang: Langs } }) {
           {dict.role}
         </h2>
         <p className='mb-4'>{dict.slogan}</p>
-        <p className='mb-2'>{dict.developed}</p>
-        <ul className='mb-4 grid grid-cols-1 sm:grid-cols-2 gap-4'>
-          {res.data.map((repo) => (
-            <li
-              key={repo.id}
-              className='transition-transform border-4 border-red-600 rounded p-4 h-full shadow'
-            >
-              <a
-                href={repo.html_url}
-                target='_blank'
+
+        <section>
+          <h3 className='mb-2 font-bold'>{dict.experiencesTitle}</h3>
+          <ol className='mb-4 list-none list-inside space-y-4'>
+            {dict.experiences.map((x, i) => (
+              <li
+                key={i}
+                className='border-4 border-red-600 rounded p-4 h-full shadow'
               >
-                <h3 className='hover:text-red-600 uppercase text-sm text-gray-800 dark:text-gray-300 font-extrabold'>{repo.name}</h3>
-              </a>
-              <Languages url={repo.languages_url} />
-              <p className='text-sm truncate mt-2'>{repo.description}</p>
-            </li>
-          ))}
-        </ul>
-        <p className='mb-4'>{dict.whoami}</p>
+                <h4 className='font-bold'>
+                  {x.company} - {x.role}
+                </h4>
+                <p className='text-sm'>
+                  {x.start} - {x.end}
+                </p>
+                <p className='text-sm'>{x.responsibilities}</p>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        <section>
+          <h3 className='mb-2 font-bold'>{dict.developed}</h3>
+          <ul className='mb-4 grid grid-cols-1 sm:grid-cols-2 gap-4'>
+            {res.data.map((repo) => (
+              <li
+                key={repo.id}
+                className='border-4 border-red-600 rounded p-4 h-full shadow'
+              >
+                <a href={repo.html_url} target='_blank'>
+                  <h3 className='hover:text-red-600 uppercase text-sm text-gray-800 dark:text-gray-300 font-extrabold'>
+                    {repo.name}
+                  </h3>
+                </a>
+                <Languages url={repo.languages_url} />
+                <p className='text-sm truncate mt-2'>{repo.description}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
+
         <p className='mb-4'>
-          {dict.contactPhrase}{' '}
+          {dict.whoami} {dict.contactPhrase}{' '}
           <Anchor href='mailto:matheussmoura@outlook.com'>
             matheussmoura@outlook.com
           </Anchor>

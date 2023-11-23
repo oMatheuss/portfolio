@@ -4,5 +4,22 @@
   "slogan": "Tenho 21 anos, sou aluno do curso de Engenharia de Computação da Uniube e atualmente trabalho como desenvolvedor usando React e .NET.",
   "whoami": "Sou brasileiro, e moro em Uberlândia - MG.",
   "contactPhrase": "Você pode me contatar em:",
-  "developed": "Eu desenvolvi algumas aplicações, entre elas:"
+  "developed": "Projetos:",
+  "experiencesTitle": "Experiência",
+  "experiences": [
+    {
+      "company": "Techmind",
+      "role": "Analista de Desenvolvimento Pleno",
+      "responsibilities": "Desenvolvimento de aplicações e sustentação de sistemas em .Net, Asp.Net, React.",
+      "start": "Set. de 2023",
+      "end": "Até o momento"
+    },
+    {
+      "company": "Techmind",
+      "role": "Analista de Desenvolvimento Junior",
+      "responsibilities": "Sustentação de sistemas em .Net, Asp.Net, React.",
+      "start": "Nov. de 2022",
+      "end": "Set. de 2023"
+    }
+  ]
 }
