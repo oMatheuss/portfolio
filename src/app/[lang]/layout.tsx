@@ -1,8 +1,11 @@
 import { Metadata } from 'next';
 import '@/app/globals.css';
-import { Noto_Sans } from 'next/font/google';
+import { Comfortaa } from 'next/font/google';
 
-const notoSans = Noto_Sans({ weight: ['100', '300', '400', '500', '700', '900'], subsets: ['latin'] });
+const notoSans = Comfortaa({
+  weight: ['400', '500', '700'],
+  subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
   title: 'Matheus • FullStack Developer',

@@ -21,5 +21,14 @@
       "start": "Nov. de 2022",
       "end": "Sep. de 2023"
     }
+  ],
+  "educationTitle": "Education",
+  "education": [
+    {
+      "location": "University of Uberaba (UNIUBE), Uberlândia - MG",
+      "start": "March 2022",
+      "end": "Until now (8th period)",
+      "description": "Bachelor's degree in Computer Engineering (on going)."
+    }
   ]
 }

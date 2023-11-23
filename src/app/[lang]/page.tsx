@@ -58,6 +58,24 @@ export default async function Home({ params }: { params: { lang: Langs } }) {
         </section>
 
         <section>
+          <h3 className='mb-2 font-bold'>{dict.educationTitle}</h3>
+          <ol className='mb-4 list-none list-inside space-y-4'>
+            {dict.education.map((x, i) => (
+              <li
+                key={i}
+                className='border-4 border-red-600 rounded p-4 h-full shadow'
+              >
+                <h4 className='font-bold'>{x.location}</h4>
+                <p className='text-sm'>
+                  {x.start} - {x.end}
+                </p>
+                <p className='text-sm'>{x.description}</p>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        <section>
           <h3 className='mb-2 font-bold'>{dict.developed}</h3>
           <ul className='mb-4 grid grid-cols-1 sm:grid-cols-2 gap-4'>
             {res.data.map((repo) => (

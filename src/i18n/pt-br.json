@@ -21,5 +21,14 @@
       "start": "Nov. de 2022",
       "end": "Set. de 2023"
     }
+  ],
+  "educationTitle": "Educação",
+  "education": [
+    {
+      "location": "Universidade de Uberaba (UNIUBE), Uberlândia - MG",
+      "start": "Março de 2020",
+      "end": "Até o momento (8° período)",
+      "description": "Bacharelado em Engenharia da Computação (em formação)."
+    }
   ]
 }
