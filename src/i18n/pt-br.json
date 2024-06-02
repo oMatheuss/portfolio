@@ -4,7 +4,7 @@
   "slogan": "Tenho 21 anos, sou aluno do curso de Engenharia de Computação da Uniube e atualmente trabalho como desenvolvedor usando React e .NET.",
   "whoami": "Sou brasileiro, e moro em Uberlândia - MG.",
   "contactPhrase": "Você pode me contatar em:",
-  "developed": "Projetos:",
+  "developed": "Projetos",
   "experiencesTitle": "Experiência",
   "experiences": [
     {
@@ -22,7 +22,7 @@
       "end": "Set. de 2023"
     }
   ],
-  "educationTitle": "Educação",
+  "educationTitle": "Formação",
   "education": [
     {
       "location": "Universidade de Uberaba (UNIUBE), Uberlândia - MG",

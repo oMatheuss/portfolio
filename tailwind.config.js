@@ -7,12 +7,22 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        'base-100': 'oklch(var(--b1) / <alpha-value>)',
+        'base-200': 'oklch(var(--b2) / <alpha-value>)',
+        'base-300': 'oklch(var(--b3) / <alpha-value>)',
+        'base-content': 'oklch(var(--bc) / <alpha-value>)',
+
+        primary: 'oklch(var(--p) / <alpha-value>)',
+        'primary-content': 'oklch(var(--pc) / <alpha-value>)',
+        secondary: 'oklch(var(--s) / <alpha-value>)',
+        'secondary-content': 'oklch(var(--sc) / <alpha-value>)',
+        accent: 'oklch(var(--a) / <alpha-value>)',
+        'accent-content': 'oklch(var(--ac) / <alpha-value>)',
+        neutral: 'oklch(var(--n) / <alpha-value>)',
+        'neutral-content': 'oklch(var(--nc) / <alpha-value>)',
       },
     },
   },
   plugins: [],
-}
+};

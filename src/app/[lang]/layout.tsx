@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import '@/app/globals.css';
 import { Red_Hat_Display } from 'next/font/google';
 
@@ -14,7 +14,6 @@ export const metadata: Metadata = {
   authors: {
     name: 'Matheus S. Moura',
   },
-  viewport: { width: 'device-width', initialScale: 1 },
   manifest: '/site.webmanifest',
   icons: [
     {
@@ -37,7 +36,9 @@ export const metadata: Metadata = {
   ],
 };
 
-export async function generateStaticParams() {
+export const viewport: Viewport = { width: 'device-width', initialScale: 1 };
+
+export function generateStaticParams() {
   return [{ lang: 'en' }, { lang: 'pt-br' }];
 }
 

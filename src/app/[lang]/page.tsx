@@ -1,8 +1,8 @@
 import Anchor from '@/components/anchor';
-import Image from 'next/image';
 import { type Langs, getDictionary } from './dictionaries';
 import { Octokit } from 'octokit';
-import Languages from '@/components/languages';
+import { ArrowIcon } from '@/components/arrow-icon';
+import { GameOfLife } from '@/components/game-of-life';
 
 export default async function Home({ params }: { params: { lang: Langs } }) {
   const dict = await getDictionary(params.lang);
@@ -11,41 +11,42 @@ export default async function Home({ params }: { params: { lang: Langs } }) {
   const res = await octokit.request('GET /users/{username}/repos', {
     username: 'oMatheuss',
     page: 1,
-    per_page: 4,
+    per_page: 3,
     sort: 'pushed',
     type: 'owner',
   });
 
   return (
     <>
-      <nav className='mb-8'>
-        <hr className='border-y-4 border-red-600' />
-      </nav>
-      <main className='text-lg mx-2 sm:max-w-prose sm:mx-auto leading-relaxed antialiased'>
-        <Image
-          src='/android-chrome-192x192.png'
-          width={192}
-          height={192}
-          alt='Logo'
-          className='h-12 w-12 rounded-md mb-4'
-        />
-        <h1 className='text-4xl text-black bold mb-2 tracking-wider font-extrabold dark:text-white'>
-          {dict.hi}
-        </h1>
-        <h2 className='text-2xl text-red-600 tracking-wider mb-6'>
-          {dict.role}
-        </h2>
-        <p className='mb-4'>{dict.slogan}</p>
+      <header className='px-4 py-2'>
+        <div className='flex h-10 items-center border-b-2 border-base-300'>
+          <h1 className='inline px-2 align-middle text-xl font-extrabold'>
+            Matheus
+          </h1>
+        </div>
+      </header>
+      <main className='mx-4 leading-relaxed antialiased xl:mx-auto xl:max-w-screen-xl'>
+        <section className='intro section relative'>
+          <GameOfLife className='absolute z-[1] h-full w-full' />
+          <div className='bg-base-200/80 dark:bg-base-200/50 z-[2] rounded p-4 shadow'>
+            <h1 className='bold mb-2 text-6xl font-extrabold tracking-wider'>
+              {dict.hi}
+            </h1>
+            <h2 className='mb-6 text-3xl font-semibold tracking-wider text-primary'>
+              {dict.role}
+            </h2>
+            <p className='mb-4 text-lg'>{dict.slogan}</p>
+          </div>
+        </section>
 
         <section>
-          <h3 className='mb-2 font-bold'>{dict.experiencesTitle}</h3>
-          <ol className='mb-4 list-none list-inside space-y-4'>
+          <h3 className='mb-2 text-3xl font-semibold'>
+            {dict.experiencesTitle}
+          </h3>
+          <ol className='mb-4 space-y-2'>
             {dict.experiences.map((x, i) => (
-              <li
-                key={i}
-                className='border-4 border-red-600 rounded-lg p-4 h-full shadow'
-              >
-                <h4 className='font-bold'>
+              <li key={i} className='rounded bg-base-200 p-4 shadow'>
+                <h4 className='font-medium'>
                   {x.company} - {x.role}
                 </h4>
                 <p className='text-sm'>
@@ -58,14 +59,11 @@ export default async function Home({ params }: { params: { lang: Langs } }) {
         </section>
 
         <section>
-          <h3 className='mb-2 font-bold'>{dict.educationTitle}</h3>
-          <ol className='mb-4 list-none list-inside space-y-4'>
+          <h3 className='mb-2 text-3xl font-semibold'>{dict.educationTitle}</h3>
+          <ol className='mb-4 space-y-2'>
             {dict.education.map((x, i) => (
-              <li
-                key={i}
-                className='border-4 border-red-600 rounded-lg p-4 h-full shadow'
-              >
-                <h4 className='font-bold'>{x.location}</h4>
+              <li key={i} className='rounded bg-base-200 p-4 shadow'>
+                <h4 className='font-medium'>{x.location}</h4>
                 <p className='text-sm'>
                   {x.start} - {x.end}
                 </p>
@@ -76,32 +74,41 @@ export default async function Home({ params }: { params: { lang: Langs } }) {
         </section>
 
         <section>
-          <h3 className='mb-2 font-bold'>{dict.developed}</h3>
-          <ul className='mb-4 grid grid-cols-1 sm:grid-cols-2 gap-4'>
+          <h3 className='mb-2 text-3xl font-semibold'>{dict.developed}</h3>
+          <ul className='mb-4 grid grid-cols-1 gap-8 text-center sm:grid-cols-2 lg:grid-cols-3'>
             {res.data.map((repo) => (
               <li
                 key={repo.id}
-                className='border-4 border-red-600 rounded-lg p-4 h-full shadow'
+                className='flex flex-col rounded bg-base-200 p-4 shadow'
               >
-                <a href={repo.html_url} target='_blank'>
-                  <h3 className='hover:text-red-600 uppercase text-sm text-gray-800 dark:text-gray-300 font-extrabold'>
-                    {repo.name}
-                  </h3>
+                <h4 className='mb-4 text-2xl font-bold capitalize leading-tight'>
+                  {repo.name}
+                </h4>
+                <p className='mb-4 text-lg font-normal'>{repo.description}</p>
+                <a
+                  href={repo.html_url}
+                  title={repo.name}
+                  className='hover:bg-primary/90 active:hover:bg-primary/70 group mt-auto inline-flex items-center justify-center rounded bg-primary px-4 py-2 text-center text-sm font-medium text-primary-content'
+                  role='button'
+                  target='_blank'
+                >
+                  Ver repositório
+                  <ArrowIcon className='-mr-1 ml-2 h-5 w-5 transition-transform group-hover:translate-x-1' />
                 </a>
-                <Languages url={repo.languages_url} />
-                <p className='text-sm truncate mt-2'>{repo.description}</p>
               </li>
             ))}
           </ul>
         </section>
 
-        <p className='mb-4'>
-          {dict.whoami} {dict.contactPhrase}{' '}
-          <Anchor href='mailto:matheussmoura@outlook.com'>
-            matheussmoura@outlook.com
-          </Anchor>
-          .
-        </p>
+        <section>
+          <p className='mb-4'>
+            {dict.whoami} {dict.contactPhrase}{' '}
+            <Anchor href='mailto:matheussmoura@outlook.com'>
+              matheussmoura@outlook.com
+            </Anchor>
+            .
+          </p>
+        </section>
       </main>
     </>
   );
