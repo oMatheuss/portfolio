@@ -1,22 +1,36 @@
 {
   "hi": "Oi, eu sou Matheus Moura.",
   "role": "Desenvolvedor FullStack.",
-  "slogan": "Tenho 21 anos, sou aluno do curso de Engenharia de Computação da Uniube e atualmente trabalho como desenvolvedor usando React e .NET.",
-  "whoami": "Sou brasileiro, e moro em Uberlândia - MG.",
+  "slogan": "Tenho 23 anos, sou aluno do curso de Engenharia de Computação da Uniube e atualmente trabalho como desenvolvedor usando React e .NET.",
+  "whoami": "Sou brasileiro, atualmente em Uberlândia - MG.",
   "contactPhrase": "Você pode me contatar em:",
   "developed": "Projetos",
   "experiencesTitle": "Experiência",
   "experiences": [
     {
-      "company": "Techmind",
-      "role": "Analista de Desenvolvimento Pleno",
-      "responsibilities": "Desenvolvimento de aplicações e sustentação de sistemas em .Net, Asp.Net, React.",
-      "start": "Set. de 2023",
+      "company": "QualityCert",
+      "role": "Desenvolvedor de Software",
+      "responsibilities": "Desenvolvimento de aplicações e sustentação de sistemas em Asp.Net",
+      "start": "Nov. de 2024",
       "end": "Até o momento"
     },
     {
       "company": "Techmind",
-      "role": "Analista de Desenvolvimento Junior",
+      "role": "Desenvolvedor Freelance",
+      "responsibilities": "Desenvolvimento de aplicações e sustentação de sistemas em .Net, Asp.Net, React.",
+      "start": "Nov. de 2024",
+      "end": "Até o momento"
+    },
+    {
+      "company": "Techmind",
+      "role": "Desenvolvedor Pleno",
+      "responsibilities": "Desenvolvimento de aplicações e sustentação de sistemas em .Net, Asp.Net, React.",
+      "start": "Set. de 2023",
+      "end": "Nov. de 2024"
+    },
+    {
+      "company": "Techmind",
+      "role": "Desenvolvedor Junior",
       "responsibilities": "Sustentação de sistemas em .Net, Asp.Net, React.",
       "start": "Nov. de 2022",
       "end": "Set. de 2023"
@@ -27,8 +41,8 @@
     {
       "location": "Universidade de Uberaba (UNIUBE), Uberlândia - MG",
       "start": "Março de 2020",
-      "end": "Até o momento (8° período)",
-      "description": "Bacharelado em Engenharia da Computação (em formação)."
+      "end": "Julho de 2024",
+      "description": "Bacharelado em Engenharia da Computação."
     }
   ]
 }

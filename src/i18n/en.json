@@ -1,22 +1,36 @@
 {
   "hi": "Hi, I'm Matheus Moura",
   "role": "FullStack Developer",
-  "slogan": "I'm 21 years old, I'm a student on the Computer Engineering course at Uniube and I currently work as a developer using React and .NET.",
-  "whoami": "I'm brazilian, and I live in Uberlândia - MG, Brazil.",
+  "slogan": "I'm 23 years old, I'm a student on the Computer Engineering course at Uniube and I currently work as a developer using React and .NET.",
+  "whoami": "I'm brazilian, currently Uberlândia - MG, Brazil.",
   "contactPhrase": "You can contact me at:",
   "developed": "Projects",
   "experiencesTitle": "Experience",
   "experiences": [
     {
-      "company": "Techmind",
-      "role": "Development Analyst",
-      "responsibilities": "Software developer and systems support in .Net, Asp.Net, React.",
-      "start": "Sep. 2023",
+      "company": "QualityCert",
+      "role": "Software Developer",
+      "responsibilities": "Software developer and systems support in Asp.Net",
+      "start": "Nov. 2024",
       "end": "Until now"
     },
     {
       "company": "Techmind",
-      "role": "Junior Development Analyst",
+      "role": "Freelance Developer",
+      "responsibilities": "Software developer and systems support in .Net, Asp.Net, React.",
+      "start": "Nov. 2024",
+      "end": "Until now"
+    },
+    {
+      "company": "Techmind",
+      "role": "Developer",
+      "responsibilities": "Software developer and systems support in .Net, Asp.Net, React.",
+      "start": "Sep. 2023",
+      "end": "Nov. 2024"
+    },
+    {
+      "company": "Techmind",
+      "role": "Junior Developer",
       "responsibilities": "Systems support in .Net, Asp.Net, React.",
       "start": "Nov. 2022",
       "end": "Sep. 2023"
@@ -27,8 +41,8 @@
     {
       "location": "University of Uberaba (UNIUBE), Uberlândia - MG",
       "start": "March 2022",
-      "end": "Until now (8th period)",
-      "description": "Bachelor's degree in Computer Engineering (on going)."
+      "end": "July 2024",
+      "description": "Bachelor's degree in Computer Engineering."
     }
   ]
 }
