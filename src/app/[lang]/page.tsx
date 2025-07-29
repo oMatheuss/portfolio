@@ -1,20 +1,10 @@
 import Anchor from '@/components/anchor';
 import { type Langs, getDictionary } from './dictionaries';
-import { Octokit } from 'octokit';
 import { ArrowIcon } from '@/components/arrow-icon';
 import { GameOfLife } from '@/components/game-of-life';
 
 export default async function Home({ params }: { params: { lang: Langs } }) {
   const dict = await getDictionary(params.lang);
-
-  const octokit = new Octokit({});
-  const res = await octokit.request('GET /users/{username}/repos', {
-    username: 'oMatheuss',
-    page: 1,
-    per_page: 3,
-    sort: 'pushed',
-    type: 'owner',
-  });
 
   return (
     <>
@@ -28,7 +18,7 @@ export default async function Home({ params }: { params: { lang: Langs } }) {
       <main className='mx-4 leading-relaxed antialiased xl:mx-auto xl:max-w-screen-xl'>
         <section className='intro section relative'>
           <GameOfLife className='absolute z-[1] h-full w-full' />
-          <div className='bg-base-200/80 dark:bg-base-200/50 z-[2] rounded p-4 shadow'>
+          <div className='z-[2] rounded bg-base-200/80 p-4 shadow dark:bg-base-200'>
             <h1 className='bold mb-2 text-6xl font-extrabold tracking-wider'>
               {dict.hi}
             </h1>
@@ -76,19 +66,21 @@ export default async function Home({ params }: { params: { lang: Langs } }) {
         <section>
           <h3 className='mb-2 text-3xl font-semibold'>{dict.developed}</h3>
           <ul className='mb-4 grid grid-cols-1 gap-8 text-center sm:grid-cols-2 lg:grid-cols-3'>
-            {res.data.map((repo) => (
+            {dict.projects.map((repo, i) => (
               <li
-                key={repo.id}
+                key={i}
                 className='flex flex-col rounded bg-base-200 p-4 shadow'
               >
-                <h4 className='mb-4 text-2xl font-bold capitalize leading-tight'>
-                  {repo.name}
+                <h4 className='mb-2 text-2xl font-bold capitalize leading-tight'>
+                  {repo.title}
                 </h4>
-                <p className='mb-4 text-lg font-normal'>{repo.description}</p>
+                <p className='mb-4 text-balance text-lg font-normal'>
+                  {repo.description}
+                </p>
                 <a
-                  href={repo.html_url}
-                  title={repo.name}
-                  className='hover:bg-primary/90 active:hover:bg-primary/70 group mt-auto inline-flex items-center justify-center rounded bg-primary px-4 py-2 text-center text-sm font-medium text-primary-content'
+                  href={repo.github}
+                  title={repo.title}
+                  className='group mt-auto inline-flex items-center justify-center rounded bg-primary px-4 py-2 text-center text-sm font-medium text-primary-content hover:bg-primary/90 active:hover:bg-primary/70'
                   role='button'
                   target='_blank'
                 >

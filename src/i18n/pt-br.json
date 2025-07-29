@@ -44,5 +44,12 @@
       "end": "Julho de 2024",
       "description": "Bacharelado em Engenharia da Computação."
     }
+  ],
+  "projects": [
+    {
+      "title": "Lina",
+      "description": "Lina é uma linguagem de programação cujo objetivo é ter uma sintaxe e semântica simples e intuitiva. Lina também foi o meu projeto de TCC na minha graduação de Engenharia da Computação.",
+      "github": "https://github.com/oMatheuss/lina"
+    }
   ]
 }

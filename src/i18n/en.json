@@ -44,5 +44,12 @@
       "end": "July 2024",
       "description": "Bachelor's degree in Computer Engineering."
     }
+  ],
+  "projects": [
+    {
+      "title": "Lina",
+      "description": "Lina is a programming language whose objective is to have a simple and intuitive syntax and semantics. Lina was also my TCC project in my Computer Engineering degree.",
+      "github": "https://github.com/oMatheuss/lina"
+    }
   ]
 }
