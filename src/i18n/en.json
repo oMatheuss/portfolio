@@ -1,11 +1,10 @@
 {
-  "hi": "Hi, I'm Matheus Moura",
+  "hi": "Hi, I'm Matheus",
   "role": "FullStack Developer",
   "slogan": "I'm 23 years old, gradueted in Computer Engineering at Uniube and I currently working as a C# developer.",
   "whoami": "I'm brazilian, currently Uberlândia - MG, Brazil.",
   "contactPhrase": "You can contact me at:",
-  "developed": "Projects",
-  "experiencesTitle": "Experience",
+  "experiencesTitle": "Professional Work",
   "experiences": [
     {
       "company": "QualityCert",
@@ -16,27 +15,13 @@
     },
     {
       "company": "Techmind",
-      "role": "Freelance Developer",
+      "role": "Software Developer",
       "responsibilities": "Software developer and systems support in .Net, Asp.Net, React.",
-      "start": "Nov. 2024",
-      "end": "Until now"
-    },
-    {
-      "company": "Techmind",
-      "role": "Developer",
-      "responsibilities": "Software developer and systems support in .Net, Asp.Net, React.",
-      "start": "Sep. 2023",
-      "end": "Nov. 2024"
-    },
-    {
-      "company": "Techmind",
-      "role": "Junior Developer",
-      "responsibilities": "Systems support in .Net, Asp.Net, React.",
       "start": "Nov. 2022",
-      "end": "Sep. 2023"
+      "end": "Set. 2024 - (Freelance) Until now"
     }
   ],
-  "educationTitle": "Education",
+  "educationTitle": "Academic Background",
   "education": [
     {
       "location": "University of Uberaba (UNIUBE), Uberlândia - MG",
@@ -45,6 +30,7 @@
       "description": "Bachelor's degree in Computer Engineering."
     }
   ],
+  "developed": "Projects",
   "projects": [
     {
       "title": "Lina",

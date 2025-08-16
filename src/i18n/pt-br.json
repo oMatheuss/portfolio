@@ -1,11 +1,10 @@
 {
-  "hi": "Oi, eu sou Matheus Moura.",
+  "hi": "Oi, eu sou Matheus",
   "role": "Desenvolvedor FullStack.",
   "slogan": "Tenho 23 anos, formado em Engenharia de Computação da Uniube e atualmente trabalho como desenvolvedor C#.",
   "whoami": "Sou brasileiro, atualmente em Uberlândia - MG.",
   "contactPhrase": "Você pode me contatar em:",
-  "developed": "Projetos",
-  "experiencesTitle": "Experiência",
+  "experiencesTitle": "Trabalho Profissional",
   "experiences": [
     {
       "company": "QualityCert",
@@ -16,27 +15,13 @@
     },
     {
       "company": "Techmind",
-      "role": "Desenvolvedor Freelance",
+      "role": "Desenvolvedor de Software",
       "responsibilities": "Desenvolvimento de aplicações e sustentação de sistemas em .Net, Asp.Net, React.",
-      "start": "Nov. de 2024",
-      "end": "Até o momento"
-    },
-    {
-      "company": "Techmind",
-      "role": "Desenvolvedor Pleno",
-      "responsibilities": "Desenvolvimento de aplicações e sustentação de sistemas em .Net, Asp.Net, React.",
-      "start": "Set. de 2023",
-      "end": "Nov. de 2024"
-    },
-    {
-      "company": "Techmind",
-      "role": "Desenvolvedor Junior",
-      "responsibilities": "Sustentação de sistemas em .Net, Asp.Net, React.",
       "start": "Nov. de 2022",
-      "end": "Set. de 2023"
+      "end": "Set. 2024 - (Freelance) Até o momento"
     }
   ],
-  "educationTitle": "Formação",
+  "educationTitle": "Formação Acadêmica",
   "education": [
     {
       "location": "Universidade de Uberaba (UNIUBE), Uberlândia - MG",
@@ -45,6 +30,7 @@
       "description": "Bacharelado em Engenharia da Computação."
     }
   ],
+  "developed": "Projetos",
   "projects": [
     {
       "title": "Lina",
